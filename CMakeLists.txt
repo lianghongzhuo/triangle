@@ -23,4 +23,8 @@ if(BUILD_EXECUTABLE)
   endif()
   set_target_properties(triangle_exec PROPERTIES OUTPUT_NAME triangle)
 endif()
+INSTALL(TARGETS triangle
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+    )
 INSTALL(FILES triangle.h DESTINATION include)
